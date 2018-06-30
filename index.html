@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
   <!-- Blank css for custom style-->
+  <style type="text/css">
+    .spacer{
+      height: 500px;
+    }
+  </style>
 </head>
 
 <body>
@@ -112,6 +117,75 @@
       <button class="button expanded large">Expanded Large Button</button>
     </div>
     <hr>
+    <div class="row">
+      <p>&nbsp;&nbsp;<strong>Form Elements :</strong></p>
+      <!-- Forms : -->
+      <form>
+        <div>
+          <label>Name :</label>
+          <input type="text" placeholder="Your Name....">
+
+          <label>Email :</label>
+          <input type="email" placeholder="Your Email....">
+
+          <label>Age :</label>
+          <input type="number" placeholder="Your Age....">
+
+          <label>Suggestions :</label>
+          <textarea placeholder="Any Suggestions..." rows="8" cols="60"></textarea>
+
+          <label>Gender :</label>
+          <select name="Gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+
+          <label>Hobbies :</label>
+          <select name="Hobbies" multiple>
+            <option>Playing</option>
+            <option>Reading</option>
+            <option>Driving</option>
+          </select>
+          <!-- Fieldset with Checkboxes -->
+          <fieldset class="fieldset">
+            <legend>A Fieldset with Hobbies :</legend>
+            <input type="checkbox"><label>Playing</label>
+            <input type="checkbox"><label>Reading</label>
+            <input type="checkbox"><label>Driving</label>
+          </fieldset>
+          <!-- Upload File Button : -->
+          <label for="uploadFile" class="button">Upload File</label>
+          <input type="file" id="uploadFile" class="show-for-sr">
+          <!-- Password with "help-text" class : -->
+          <label>Password :</label>
+          <input type="password">
+          <p class="help-text">It must be 8 or more than 8 characters...</p>
+          <!-- Input Groups : -->
+          <div class="input-group">
+            <span class="input-group-label">@</span>
+            <input type="email" placeholder="Your Email.." class="input-group-field">
+            <div class="input-group-button">
+              <button type="button" class="button">Submit</button>
+            </div>
+          </div>
+          <!-- Switch (Sliding Switch) : -->
+          <div class="switch">
+            <input class="switch-input" id="mySwitch" type="checkbox">
+            <label for="mySwitch" class="switch-paddle">
+              <span class="show-for-sr">Enabled</span>
+            </label>
+          </div>
+          <!-- Slider : -->
+          <div class="slider" data-slider data-initial-start="0" data-end="20">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+            <span class="slider-fill" data-slider-fill></span>
+            <input type="hidden">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="spacer"></div>
   </div>
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
